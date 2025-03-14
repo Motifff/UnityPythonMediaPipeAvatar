@@ -1,0 +1,120 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f1260b785da3e24ebe737764cc33de0, type: 3}
+  m_Name: ForUnityRig(Clone)71bb9852fdbf648c7aeb23a3625ea171
+  m_EditorClassIdentifier: 
+  note: 
+  parentCalibrationData:
+  - bone: 14
+    data:
+      parentn: ForUnityRig(Clone)/metarig/spine/spine.001/spine.002/spine.003/shoulder.R/upper_arm.R/
+      childn: ForUnityRig(Clone)/metarig/spine/spine.001/spine.002/spine.003/shoulder.R/upper_arm.R/forearm.R/
+      tparentn: PipeServer/Body Parent/RIGHT_SHOULDER/
+      tchildn: PipeServer/Body Parent/RIGHT_ELBOW/
+      initialDir: {x: -0.9983069, y: -0.0003956503, z: -0.058165893}
+      initialRotation: {x: -0.7326192, y: 0.6802745, z: 0.022238284, w: -0.0013258457}
+      targetRotation: {x: 0, y: 0, z: 0, w: 0}
+  - bone: 16
+    data:
+      parentn: ForUnityRig(Clone)/metarig/spine/spine.001/spine.002/spine.003/shoulder.R/upper_arm.R/forearm.R/
+      childn: ForUnityRig(Clone)/metarig/spine/spine.001/spine.002/spine.003/shoulder.R/upper_arm.R/forearm.R/hand.R/
+      tparentn: PipeServer/Body Parent/RIGHT_ELBOW/
+      tchildn: PipeServer/Body Parent/RIGHT_WRIST/
+      initialDir: {x: -0.8423111, y: 0.08108391, z: -0.5328578}
+      initialRotation: {x: -0.7004664, y: 0.71272594, z: -0.01369518, w: 0.034369856}
+      targetRotation: {x: 0, y: 0, z: 0, w: 0}
+  - bone: 2
+    data:
+      parentn: ForUnityRig(Clone)/metarig/spine/thigh.R/
+      childn: ForUnityRig(Clone)/metarig/spine/thigh.R/shin.R/
+      tparentn: PipeServer/Body Parent/RIGHT_HIP/
+      tchildn: PipeServer/Body Parent/RIGHT_KNEE/
+      initialDir: {x: 0.1037917, y: -0.9812317, z: -0.16251667}
+      initialRotation: {x: 0.0007373588, y: 0.014731795, z: -0.99982023, w: -0.0119170705}
+      targetRotation: {x: 0, y: 0, z: 0, w: 0}
+  - bone: 4
+    data:
+      parentn: ForUnityRig(Clone)/metarig/spine/thigh.R/shin.R/
+      childn: ForUnityRig(Clone)/metarig/spine/thigh.R/shin.R/foot.R/
+      tparentn: PipeServer/Body Parent/RIGHT_KNEE/
+      tchildn: PipeServer/Body Parent/RIGHT_ANKLE/
+      initialDir: {x: -0.19496314, y: -0.79652727, z: 0.57230556}
+      initialRotation: {x: -0.0016896944, y: -0.047055304, z: -0.998821, w: -0.011819673}
+      targetRotation: {x: 0, y: 0, z: 0, w: 0}
+  - bone: 13
+    data:
+      parentn: ForUnityRig(Clone)/metarig/spine/spine.001/spine.002/spine.003/shoulder.L/upper_arm.L/
+      childn: ForUnityRig(Clone)/metarig/spine/spine.001/spine.002/spine.003/shoulder.L/upper_arm.L/forearm.L/
+      tparentn: PipeServer/Body Parent/LEFT_SHOULDER/
+      tchildn: PipeServer/Body Parent/LEFT_ELBOW/
+      initialDir: {x: 0.9530146, y: -0.11763763, z: -0.27914968}
+      initialRotation: {x: 0.7326192, y: 0.6802745, z: 0.022238284, w: 0.0013258457}
+      targetRotation: {x: 0, y: 0, z: 0, w: 0}
+  - bone: 15
+    data:
+      parentn: ForUnityRig(Clone)/metarig/spine/spine.001/spine.002/spine.003/shoulder.L/upper_arm.L/forearm.L/
+      childn: ForUnityRig(Clone)/metarig/spine/spine.001/spine.002/spine.003/shoulder.L/upper_arm.L/forearm.L/hand.L/
+      tparentn: PipeServer/Body Parent/LEFT_ELBOW/
+      tchildn: PipeServer/Body Parent/LEFT_WRIST/
+      initialDir: {x: 0.65466243, y: 0.041069925, z: -0.7548049}
+      initialRotation: {x: 0.70046663, y: 0.7127258, z: -0.013694942, w: -0.034370154}
+      targetRotation: {x: 0, y: 0, z: 0, w: 0}
+  - bone: 1
+    data:
+      parentn: ForUnityRig(Clone)/metarig/spine/thigh.L/
+      childn: ForUnityRig(Clone)/metarig/spine/thigh.L/shin.L/
+      tparentn: PipeServer/Body Parent/LEFT_HIP/
+      tchildn: PipeServer/Body Parent/LEFT_KNEE/
+      initialDir: {x: 0.095429495, y: -0.98837936, z: -0.11831902}
+      initialRotation: {x: -0.0007373588, y: 0.014731795, z: -0.99982023, w: 0.0119170705}
+      targetRotation: {x: 0, y: 0, z: 0, w: 0}
+  - bone: 3
+    data:
+      parentn: ForUnityRig(Clone)/metarig/spine/thigh.L/shin.L/
+      childn: ForUnityRig(Clone)/metarig/spine/thigh.L/shin.L/foot.L/
+      tparentn: PipeServer/Body Parent/LEFT_KNEE/
+      tchildn: PipeServer/Body Parent/LEFT_ANKLE/
+      initialDir: {x: 0.042237885, y: -0.9230634, z: 0.38232177}
+      initialRotation: {x: 0.0016896934, y: -0.047055304, z: -0.998821, w: 0.011819674}
+      targetRotation: {x: 0, y: 0, z: 0, w: 0}
+  spineUpDown:
+    parentn: ForUnityRig(Clone)/metarig/spine/spine.001/
+    childn: ForUnityRig(Clone)/metarig/spine/spine.001/spine.002/spine.003/spine.004/spine.005/
+    tparentn: VirtualHip/
+    tchildn: VirtualNeck/
+    initialDir: {x: -0.019361231, y: 0.9934435, z: -0.11267298}
+    initialRotation: {x: -0, y: 0.99810135, z: -0.06159371, w: 0}
+    targetRotation: {x: 0, y: 0, z: 0, w: 0}
+  hipsTwist:
+    parentn: ForUnityRig(Clone)/metarig/spine/
+    childn: ForUnityRig(Clone)/metarig/spine/
+    tparentn: PipeServer/Body Parent/RIGHT_HIP/
+    tchildn: PipeServer/Body Parent/LEFT_HIP/
+    initialDir: {x: 0.99781907, y: 0.06599173, z: 0.0015103807}
+    initialRotation: {x: -0, y: 0.99205315, z: -0.12581944, w: 0}
+    targetRotation: {x: 0, y: 0, z: 0, w: 0}
+  chest:
+    parentn: ForUnityRig(Clone)/metarig/spine/spine.001/spine.002/
+    childn: ForUnityRig(Clone)/metarig/spine/spine.001/spine.002/
+    tparentn: PipeServer/Body Parent/RIGHT_HIP/
+    tchildn: PipeServer/Body Parent/LEFT_HIP/
+    initialDir: {x: 0.99781907, y: 0.06599173, z: 0.0015103807}
+    initialRotation: {x: -0, y: 0.9998736, z: 0.01590851, w: 0}
+    targetRotation: {x: 0, y: 0, z: 0, w: 0}
+  head:
+    parentn: ForUnityRig(Clone)/metarig/spine/spine.001/spine.002/spine.003/spine.004/spine.005/
+    childn: ForUnityRig(Clone)/metarig/spine/spine.001/spine.002/spine.003/spine.004/spine.005/spine.006/
+    tparentn: VirtualNeck/
+    tchildn: PipeServer/Body Parent/NOSE/
+    initialDir: {x: -0.044009343, y: 0.6553687, z: -0.75402594}
+    initialRotation: {x: -0, y: 0.99999964, z: 0.0011269748, w: 0}
+    targetRotation: {x: 0, y: 0, z: 0, w: 0}

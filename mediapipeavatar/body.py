@@ -3,6 +3,7 @@ import mediapipe as mp
 from mediapipe.tasks import python
 from mediapipe.tasks.python import vision
 from clientUDP import ClientUDP
+import numpy as np
 
 import cv2
 import threading
@@ -47,6 +48,17 @@ class BodyThread(threading.Thread):
     timeSinceCheckedConnection = 0
     timeSincePostStatistics = 0
 
+    def __init__(self):
+        super().__init__()
+        self.latest_image = None
+        self.image_lock = threading.Lock()
+        
+    def get_latest_image(self):
+        with self.image_lock:
+            if self.latest_image is not None:
+                return self.latest_image.copy()
+            return None
+
     def run(self):
         mp_drawing = mp.solutions.drawing_utils
         mp_pose = mp.solutions.pose
@@ -89,8 +101,8 @@ class BodyThread(threading.Thread):
                                                 mp_drawing.DrawingSpec(color=(255, 100, 0), thickness=2, circle_radius=4),
                                                 mp_drawing.DrawingSpec(color=(255, 255, 255), thickness=2, circle_radius=2),
                                                 )
-                    cv2.imshow('Body Tracking', image)
-                    cv2.waitKey(3)
+                        with self.image_lock:
+                            self.latest_image = image.copy()
 
                 # Set up data for relay
                 self.data = ""
@@ -138,4 +150,3 @@ class BodyThread(threading.Thread):
                     print("Failed to write to pipe. Is the unity project open?")
                     self.pipe= None
         pass
-                        
