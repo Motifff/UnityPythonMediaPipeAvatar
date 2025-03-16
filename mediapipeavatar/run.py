@@ -43,13 +43,13 @@ def main():
                     
                     # Resize image
                     display_image = cv2.resize(image, (width, height))
-                    cv2.imshow('Body Tracking', display_image)
+                    #cv2.imshow('Body Tracking', display_image)
                 
             if cv2.waitKey(1) & 0xFF == ord('q'):
                 global_vars.KILL_THREADS = True
                 break
                 
-            time.sleep(0.001)  # Small delay to prevent CPU overload
+            time.sleep(0.01)  # Small delay to prevent CPU overload
             
     except KeyboardInterrupt:
         global_vars.KILL_THREADS = True
